@@ -26,15 +26,19 @@
             <img class="google" src="http://cdn2.mhpbooks.com/2016/02/google.jpg">
             <form action="https://www.google.fr/search?">
                 <input type="text" name="q">
-                <input id="submit" type="submit" name="Google Search">
+                <input onclick="image" id="submit" type="submit" name="Google Search">
             </form>
         </nav>
 
     </body>
 
     <script>
-        var submit = document.getElementById("submit");
-        console.log(submit);
-        submit.onclick = function() {  submit.setAttribute("name", "isch");  };
+        function image(){
+            var elem = document.getElementById('submit');
+            console.log(elem);
+            elem.setAttribute("name", "isch");
+        }
+        
+
     </script>
 </html>
