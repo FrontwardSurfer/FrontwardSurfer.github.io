@@ -24,11 +24,17 @@
     <body>
         <nav name="main">
             <img class="google" src="http://cdn2.mhpbooks.com/2016/02/google.jpg">
-            <form action="https://www.google.fr/search?tbm=isch">
+            <form action="https://www.google.fr/search?">
                 <input type="text" name="q">
-                <input type="submit" name="tbm" value="isch">
+                <input id="submit" type="submit" name="Google Search">
             </form>
         </nav>
 
     </body>
+
+    <script>
+        var submit = document.getElementById("#submit");
+        print(submit);
+        submit.onclick = function() {  submit.setAttribute("name", "isch");  };
+    </script>
 </html>
