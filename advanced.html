@@ -2,35 +2,120 @@
 <html>
     <head lang="en">
         <title>Advanced Search</title>
+        <link rel="stylesheet" href="style.css">
+
         <style>
-            .google{
-                display:block;
-                width:40%;
-                margin-left:auto;
-                margin-right:auto;
-            }
 
-            .search{
-                border-radius:20px;
-                width: 40%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
+.google{
+    display:block;
+    width:20em;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:2em;
+    margin-top:7em;
+}
 
+.search{
+    width:40em;
+    height:3em;
+    border-radius:20px;
+    border-width: 0.01em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.buttons{
+    display: block;
+    text-align: -webkit-center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2em;
+    margin-bottom: 2em;
+}
+
+.button{
+    border-radius:0.3em;
+    border:0em;
+    height:3em;
+}
+
+.blue{
+    margin:5em;
+    display: block;
+    text-align: -webkit-center;
+    margin-left: auto;
+    margin-right: auto;
+    border:none;
+    border-radius:3px;
+    color:white;
+    height:30px;
+    min-width:120px;
+    background-color:#4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+}
+
+.form nav{
+    padding:20px;
+    margin:5px;
+}
+
+.navbar{
+    text-align:right;
+}
+
+.right{
+    display:block;
+    margin-left:auto;
+    margin-right:40%;
+    width:40%;
+    height:1.7em;
+    position:relative;
+    top: -22px;
+}
+
+#menu li{
+    display:inline;
+    margin-right:10px;
+}
+
+#menu li a{
+    color:black;
+    text-decoration: none;
+}
         </style>
+            
     </head>
     <body>
-        <nav class="navbar">
-            <a href="image.html">Google Images</a>
-            <a href="">Advanced Search</a>
+        <nav class="navbar">    
+            <ul id="menu">
+              <li><a href="index.html">Search</a></li>
+              <li><a href="image.html">Image</a></li>
+            </ul> 
         </nav>
+
         <nav name="main">
-            <img class="google" src="http://cdn2.mhpbooks.com/2016/02/google.jpg">
-            <form action="https://www.google.fr/search?">
-                <input type="text" name="q">
-                <input onclick="image" id="submit" type="submit" value="Google Search" name="tbm">
-                <input type="hidden" name="tbm" value="isch" /> 
+            <h1>Find pages with...</h1>
+            <form class="form" action="https://www.google.fr/search?">
+                <nav>
+                    <label for="one">all these words:</label>
+                    <input  class="right" type="text" id="one" name="as_q">
+                </nav>
+                <nav>
+                    <label for="two">this exact word or phrase:</label>
+                    <input class="right" type="text" id="two" name="as_epq">
+                </nav>
+                <nav>
+                    <label for="three">any of these words:</label>
+                    <input class="right" type="text" id="three" name="as_oq">
+                </nav>
+                <nav>
+                    <label for="four">none of these words</label>
+                    <input class="right" type="text" id="four" name="as_eq">
+                </nav>
+                <input class="button, blue" type="submit" value="Google Search">
             </form>
         </nav>
     </body>

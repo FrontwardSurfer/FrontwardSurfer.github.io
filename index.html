@@ -2,58 +2,67 @@
 <html>
     <head lang="en">
         <title>Search</title>
-        <style>
-            .google{
-                display:block;
-                width:20em;
-                margin-left:auto;
-                margin-right:auto;
-                margin-bottom:2em;
-                margin-top:7em;
-            }
-
-            .search{
-                width:40em;
-                height:3em;
-                border-radius:20px;
-                border-width: 0.01em;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .buttons{
-                display: block;
-                text-align: -webkit-center;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top:2em;
-                margin-bottom: 2em;
-            }
-
-            .button{
-                border-radius:0.3em;
-                border:0em;
-                height:3em;
-            }
-
-            .navbar{
-                text-align:right;
-            }
-
-            #menu li{
-                display:inline;
-            }
-
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
+
+    <style>
+        .google{
+    display:block;
+    width:20em;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:2em;
+    margin-top:7em;
+}
+
+.search{
+    width:40em;
+    height:3em;
+    border-radius:20px;
+    border-width: 0.01em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons{
+    display: block;
+    text-align: -webkit-center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2em;
+    margin-bottom: 2em;
+}
+
+.button{
+    border-radius:0.3em;
+    border:0em;
+    height:3em;
+}
+
+.navbar{
+    text-align:right;
+}
+
+#menu li{
+    display:inline;
+    margin-right:10px;
+}
+
+#menu li a{
+    color:black;
+    text-decoration: none;
+}
+    </style>
+
     <body>
         <nav class="navbar">    
             <ul id="menu">
-              <li><a href="image.html">Google Images</a></li>
-              <li><a href="advanced.html">Advanced Search</a></li>
+              <li><a href="image.html">Images</a></li>
+              <li><a href="advanced.html">Advanced</a></li>
             </ul> 
         </nav>
+
         <nav name="main">
             <img class="google" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
             <form action="https://google.com/search">
